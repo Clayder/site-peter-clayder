@@ -10,13 +10,12 @@
   <meta name="author" content="Peter Clayder" />
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-
   <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
-	<script src="https://use.fontawesome.com/35cbc79996.js"></script>
-      <link rel="stylesheet" href="css/style.css">
-      <link rel="stylesheet" href="css/my-style.css">
-		<link rel="stylesheet" type="text/css" href="css/component.css" />
-		<script src="js/modernizr.custom.js"></script>
+  <link rel="stylesheet" href="http://localhost/www/peter-dev/site-estatico/css/style.css">
+  <link rel="stylesheet" href="http://localhost/www/peter-dev/site-estatico/css/my-style.css">
+  <link rel="stylesheet" type="text/css" href="http://localhost/www/peter-dev/site-estatico/css/component.css" />
+  <script src="https://use.fontawesome.com/35cbc79996.js"></script>
+  <script src="js/modernizr.custom.js"></script>
 </head>
 
 <body>
