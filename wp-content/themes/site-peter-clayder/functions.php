@@ -13,8 +13,43 @@
 		return get_posts($args);
 	}
 
+	function imprimeLiLink($href, $icone, $titulo, $active = false){
+		$brand = "";
+		if($active){
+			$brand = "class='sidebar-brand'";
+		}
+		echo "<li ".$brand.">";
+			echo "<a href='".$href."'><i class='fa fa-fw ".$icone."'></i> ".$titulo." </a>";
+		echo "</li>";
+	}
+
+	function imprimeMenu(){
+		$home = 'Home';
+		$sobre = 'Sobre';
+		$habilidade = 'Habilidade';
+		$projeto = 'Projeto';
+		$contato = 'Contato';
+		$blog ='Blog';
+		if(is_page('home')){
+			$home = '#home';
+			$sobre = '#sobre';
+			$habilidade = '#habilidade';
+			$projeto = '#projeto';
+			$contato = '#contato';
+			$blog = '#blog';
+		}
+
+		imprimeLiLink($home, "fa-home", "Peter Clayder", true);
+		imprimeLiLink($sobre, "fa-info", "Sobre");
+		imprimeLiLink($habilidade, "fa-thumbs-up", "Habilidades");
+		imprimeLiLink($projeto, "fa-cubes", "Projetos");
+		imprimeLiLink($contato, "fa-envelope-o", "Contato");
+		imprimeLiLink($blog, "fa-book", "Blog");
+	}
+
 	function pre($array){
 		echo "<pre>";
 		print_r($array);
 		echo "</pre>";
 	}
+
