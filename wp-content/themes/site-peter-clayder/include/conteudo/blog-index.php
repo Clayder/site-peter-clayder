@@ -15,15 +15,17 @@
 		<ul>
 			<?php foreach ($objPosts as $post): ?>
 				<?php setup_postdata($post); ?>
-				<a href="<?= get_the_permalink(); ?>">
+				
 					<div class="projetos relevo-conteudo-projetos" id="blog-"<?= $post->ID; ?>>
 						<?= get_the_post_thumbnail(null, array(350, 161), array( 'class' => 'img-responsive' ) ); ?>
-						<h4 class="titulo-projeto"><?= get_the_title(); ?></h4>
+						<a href="<?= get_the_permalink(); ?>">
+							<h4 class="titulo-projeto"><?= get_the_title(); ?></h4>
+						</a>
 						<p class="resumo-projeto">
-							<?= get_the_excerpt($post->ID); ?>
+							<?= get_the_content( "Continue lendo"); ?>
 						</p>
 					</div>
-				</a>
+			
 			<?php endforeach; ?>
 		</ul>
 	</div>
