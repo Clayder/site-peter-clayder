@@ -1,4 +1,5 @@
-<?php if ( have_posts() ): ?>
+<?php $objPosts = getPostLimitado(4); ?>
+<?php if (count($objPosts) > 0): ?>
 	<h2 class="page-header">  Blog </h2>
 	<div class="row">
 		<div class="col-lg-12">
@@ -12,7 +13,8 @@
 	</div>
 	<div class="row" style="margin-top: 40px;">	
 		<ul>
-			<?php while(have_posts()): the_post(); ?>
+			<?php foreach ($objPosts as $post): ?>
+				<?php setup_postdata($post); ?>
 				<a href="<?= get_the_permalink(); ?>">
 					<div class="projetos relevo-conteudo-projetos" id="blog-"<?= $post->ID; ?>>
 						<?= get_the_post_thumbnail(null, array(350, 161), array( 'class' => 'img-responsive' ) ); ?>
@@ -22,7 +24,7 @@
 						</p>
 					</div>
 				</a>
-			<?php endwhile; ?>
+			<?php endforeach; ?>
 		</ul>
 	</div>
 <?php else: ?>
