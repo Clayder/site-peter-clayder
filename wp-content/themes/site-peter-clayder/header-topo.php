@@ -25,7 +25,7 @@
 		</div>
 		<div class="row" id="animateTest">
 			<div class="col-md-9" >
-				<a  href="#apresentacao" style="position: relative; top: 20px; color: #48d09b"> <i class="fa fa-arrow-circle-down fa-3x" aria-hidden="true"></i></a>
+				<a  href="#sobre" style="position: relative; top: 20px; color: #48d09b"> <i class="fa fa-arrow-circle-down fa-3x" aria-hidden="true"></i></a>
 			</div>
 		</div>
 

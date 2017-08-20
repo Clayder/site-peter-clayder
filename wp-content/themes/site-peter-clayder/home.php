@@ -11,13 +11,13 @@
 			<span class="hamb-bottom"></span>
 		</button>
         <div class="container">
-            <div class="row" id="apresentacao">
-                <div class="col-lg-11 col-lg-offset-1">
+            <div class="row" id="sobre">
+                <div class="col-lg-12">
                     <?php get_template_part('include/conteudo/apresentacao'); ?>
                 </div>
             </div>
-            <div class="row" id="atividade">
-                <div class="col-lg-11 col-lg-offset-1">
+            <div class="row" id="habilidade">
+                <div class="col-lg-12">
                     <?php get_template_part('include/conteudo/atividades'); ?>
                 </div>
             </div>
@@ -32,7 +32,7 @@
                 </div>
             </div>
             <div class="row" id="contato">
-                <div class="col-lg-10 col-lg-offset-1">
+                <div class="col-lg-12">
                 	<?php get_template_part('include/conteudo/contato'); ?>
                 </div>
             </div>

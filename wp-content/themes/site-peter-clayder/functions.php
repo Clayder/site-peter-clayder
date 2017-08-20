@@ -31,7 +31,7 @@
 		$contato = 'Contato';
 		$blog ='Blog';
 		if(is_page('home')){
-			$home = '#home';
+			$home = '#wrapper';
 			$sobre = '#sobre';
 			$habilidade = '#habilidade';
 			$projeto = '#projeto';
@@ -43,8 +43,8 @@
 		imprimeLiLink($sobre, "fa-info", "Sobre");
 		imprimeLiLink($habilidade, "fa-thumbs-up", "Habilidades");
 		imprimeLiLink($projeto, "fa-cubes", "Projetos");
-		imprimeLiLink($contato, "fa-envelope-o", "Contato");
 		imprimeLiLink($blog, "fa-book", "Blog");
+		imprimeLiLink($contato, "fa-envelope-o", "Contato");
 	}
 
 	function pre($array){
