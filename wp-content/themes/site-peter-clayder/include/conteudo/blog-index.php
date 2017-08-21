@@ -1,4 +1,4 @@
-<?php $objPosts = getPostLimitado(4); ?>
+<?php $objPosts = getPostLimitado(3); ?>
 <?php if (count($objPosts) > 0): ?>
 	<h2 class="page-header">  Blog </h2>
 	<div class="row">

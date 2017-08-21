@@ -1,4 +1,4 @@
-<header>
+<header class="home">
 	<div class="container content">
 		<div class="row">
 			<div class="col-md-9">
@@ -28,7 +28,5 @@
 				<a  href="#sobre" style="position: relative; top: 20px; color: #48d09b"> <i class="fa fa-arrow-circle-down fa-3x" aria-hidden="true"></i></a>
 			</div>
 		</div>
-
 	</div>
-
 </header>
