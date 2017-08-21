@@ -86,3 +86,42 @@
 		echo "</pre>";
 	}
 
+	/**
+	 * --------------------------------------------------------------
+	 *  Criação de Custom Post Types 
+	 * --------------------------------------------------------------
+	 */
+	function bootstrap_son_post_type_projetos(){
+		$labels = array(
+		
+		'name' => "Projetos",
+			'singular_name' => "Projeto",
+			'add_new'=> "Adicionar Novo Projeto",   
+			'add_new_label' => "Adicionar Novo Projeto",
+			'all_item' => "Todos os projetos", 
+			'add_new_item'=> "Adicionar Novo Projeto",
+			'edit_item' => "Editar Projeto",
+			'new_item' =>  "Novo Projeto",
+			'view_item' => "Visualizar Projeto",
+			'search_item' => "Procurar Projeto",
+			'not_found' => "Nenhum Projeto Encontrado",
+			'not_found_in_trash' => "Nenhum Projeto Na Lixeira"
+		);
+		$args = array(
+			
+			'labels' => $labels, 
+			'public' => true,
+			'has_archive' => true,
+			'publicly_queryable' => true,
+			'query_var' => true,
+			'rewrite' => true,
+			'capability_type' => 'post',
+			'supports' => array(
+					'title','editor','thumbnail','excerpt'  
+				),
+			'menu_position' => 5, 
+			'exclude_from_search' => false              
+		);
+		register_post_type('projetos',$args);
+	}
+	add_action('init','bootstrap_son_post_type_projetos');

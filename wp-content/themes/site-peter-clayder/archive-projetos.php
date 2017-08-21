@@ -1,14 +1,10 @@
-<?php
-/* 
-Template Name: Blog
-*/ 
-?>
-<?php $nomePagina = "blog"; ?>
+<?php $nomePagina = "projetos"; ?>
 <?php include(locate_template('include/paginas/topo-paginas.php')); ?>
 <?php $args = array('post_type'=>'post', 'order'=>'DESC'); ?>
 <?php $objPosts = get_posts($args); ?>
-<?php foreach ($objPosts as $post): ?>
-    <?php setup_postdata($post); ?>
+<?php //foreach ($objPosts as $post): ?>
+<?php if(have_posts()): while(have_posts()): the_post(); ?>
+    <?php //setup_postdata($post); ?>
     <div class="row">
         <div class="col-lg-12 conteudo-lista-post">
             <a href="<?= get_the_permalink(); ?>"><h2><?= get_the_title(); ?></h2></a>
@@ -20,7 +16,9 @@ Template Name: Blog
         </div>
     </div>
     <hr>
-<?php endforeach; ?>
+<?php endwhile; ?>
+<?php endif; ?>
+<?php //endforeach; ?>
 <div class="row paginacao" >
     <!-- Pager -->
     <ul class="pager">

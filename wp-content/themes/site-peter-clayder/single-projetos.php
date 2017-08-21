@@ -1,5 +1,5 @@
-<?php $nomePagina = "blog"; ?>
-<?php include(locate_template('include/paginas/topo-paginas.php')); ?>
+<?php $nomePagina = "projeto"; ?>
+<?php include(locate_template('include/paginas/topo-paginas.php'));?>
 <?php if(have_posts()):?>
     <?php while(have_posts()): the_post(); ?>
         <div class="row">

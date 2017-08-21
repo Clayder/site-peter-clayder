@@ -5,7 +5,9 @@
 	<header class="paginas">
         <a href="<?= home_url(); ?>">    
             <h1 class="paginas">
-                <span style="color: #333333"><\</span> blog <span style="color: #333333">></span> Peter Clayder 
+                <span style="color: #333333"><\</span> 
+                    <?= $nomePagina; ?> 
+                <span style="color: #333333">></span> Peter Clayder 
             </h1>
         </a>
     </header>
