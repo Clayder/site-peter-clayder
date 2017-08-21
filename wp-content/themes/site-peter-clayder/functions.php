@@ -2,6 +2,22 @@
 	// ativa o thumbnails
 	add_theme_support('post-thumbnails');
 
+	function my_wp_scripts(){
+		wp_enqueue_style('normalize', sprintf('%s/assets/normalize/normalize.min.css',get_template_directory_uri()));
+		wp_enqueue_style('bootstrap', sprintf('%s/assets/bootstrap/css/bootstrap.min.css',get_template_directory_uri()));
+		wp_enqueue_style('style_tema', sprintf('%s/assets/css/style.css',get_template_directory_uri()));
+		wp_enqueue_style('mystyle', sprintf('%s/assets/css/my-style.css',get_template_directory_uri()));
+		wp_enqueue_style('component', sprintf('%s/assets/css/component.css',get_template_directory_uri()));
+		wp_enqueue_script('bootstrap', sprintf('%s/assets/js/fontawesome.js',get_template_directory_uri()));
+		wp_enqueue_script('bootstrap', sprintf('%s/assets/js/modernizr.custom.js',get_template_directory_uri()));
+		wp_enqueue_style('style',get_stylesheet_uri());
+		wp_enqueue_script('jqueryjs', sprintf('%s/assets/js/jquery.min.js',get_template_directory_uri()),['jquery'],null,true);
+		wp_enqueue_script('bootstrapjs', sprintf('%s/assets/bootstrap/js/bootstrap.min.js',get_template_directory_uri()),['jquery'],null,true);
+		wp_enqueue_script('jsindex', sprintf('%s/assets/js/index.js',get_template_directory_uri()),null,null,true);
+	}
+	
+	add_action('wp_enqueue_scripts' , 'my_wp_scripts');
+	
 	/**
 	 * Retorna uma quantidade de post especifica
 	 *

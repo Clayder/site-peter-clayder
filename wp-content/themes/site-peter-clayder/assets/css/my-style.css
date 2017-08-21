@@ -1,0 +1,250 @@
+header.home{
+	background-color: #333333;
+	background-image: url("../img/layout/header.png");
+	background-repeat: no-repeat;
+	min-height: 675px;
+}
+
+span.icon-button-menu{
+	background-color: #48d09b !important;
+}
+
+header.paginas{
+	background: #fff;
+	padding: .625rem 1.25rem;
+	box-shadow: 0 -3px 9px #000;
+	position: fixed;
+	width: 100%;
+	z-index: 10;
+}
+
+header.paginas > a{
+	text-decoration: none;
+}
+
+header.paginas > a:hover{
+	text-decoration: none;
+}
+
+h1.paginas{
+	color: #337ab7;
+	text-align: center;
+	font-size: 30px;
+}
+
+i.paginas{
+	color: #337ab7;
+}
+
+body.paginas{
+	background-color: #fff;
+}
+
+body.home{
+	background-color: #1e73be;
+}
+
+div.topo{
+	position: relative;
+	bottom: 20px;
+}
+
+p.tema-site{
+	font-size: 25px;
+	color: #FFF;
+	margin-bottom: 25px;
+}
+
+p.tema-site > span.nome-topo{
+	text-align: center;
+	font-size: -webkit-xxx-large;
+	font-weight: bold;
+	font-weight: 800;
+    text-shadow: 0 1px 5px #222222;
+}
+
+p.tema-site > #texto-topo{
+	color: #48d09b;
+	text-align: center;
+	font-weight: bold;
+}
+
+.content {
+    position: absolute;
+    text-align: center;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 50%;
+    height: 50%;
+    margin: auto;
+}
+
+a.redes-sociais{
+	margin-left: 15px;
+    margin-right: 10px;
+    margin-bottom: 25px;
+}
+
+a.redes-sociais > i:hover{
+	color: #0389e2;
+}
+
+.page-header {
+    color: #FFF;
+	font-weight: 800;
+	text-shadow: 0 1px 5px #222222;
+	border-bottom: 1px solid #FFF;
+}
+
+p{
+	font-size: 25px;
+	color: #FFF !important;
+}
+
+p.texto{
+	text-indent:2em;
+}
+
+div.skill{
+	margin-bottom: 20x;
+	margin-top: 20px;
+	margin-left: 20px;
+	float: left;
+	text-align: center;
+	padding: 0 30px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	color: #FFF;
+}
+
+#skill-php{
+	background-color: #01579b;
+}
+
+#skill-html{
+	background-color: #d84315 ;
+}
+
+#skill-js{
+	background-color: #ffeb3b;
+	color: #000;
+}
+
+#skill-css{
+	background-color: #FF1744;
+}
+
+#skill-bootstrap{
+	background-color: #9c27b0;
+}
+
+#skill-uml{
+	background-color: #c0ca33;
+}
+
+#skill-git{
+	background-color: #9e9e9e;
+}
+
+#skill-mysql{
+	background-color: #4CAF50;
+}
+
+#skill-codeigniter{
+	background-color: #F44336;
+}
+
+#skill-wordpress{
+	background-color: #ea80fc;
+}
+
+#skill-jquery{
+	background-color: #ffc107;
+	color: #000;
+}
+
+div.relevo-conteudo{
+	padding: 10px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	-webkit-box-shadow: 10px 10px 33px -2px rgba(0,0,0,0.75);
+	-moz-box-shadow: 10px 10px 33px -2px rgba(0,0,0,0.75);
+	box-shadow: 10px 10px 33px -2px rgba(0,0,0,0.75);
+}
+
+div.relevo-conteudo-projetos{
+	background-color: #333;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	-webkit-box-shadow: 10px 10px 33px -2px rgba(0,0,0,0.75);
+	-moz-box-shadow: 10px 10px 33px -2px rgba(0,0,0,0.75);
+	box-shadow: 10px 10px 33px -2px rgba(0,0,0,0.75);
+}
+
+
+#texto-skill{
+	float: left;
+	min-height: 120px;
+}
+
+#texto-projetos{
+	min-height: 10px;
+}
+
+div.projetos{
+	margin: 0 auto;
+	width: 300px;
+	float: left;
+	margin-left: 20px;
+	margin-bottom: 40px;
+	min-height: 400px;
+	text-align: center;
+}
+
+div.projetos > a:hover{
+	text-decoration: underline;
+}
+
+div.projetos > a{
+	text-decoration: none;
+}
+
+img.img-projeto{
+	margin: 0;
+}
+
+h4.titulo-projeto{
+	color: #48d09b;
+	text-align: center;
+	font-weight: bold;
+}
+
+p.resumo-projeto{
+	text-indent:2em;
+	padding: 10px;
+	font-size: 20px;
+}
+
+div.conteudo-lista-post > a > h2{
+	color: #333;
+    font-size: 38px;
+}
+
+div.conteudo-lista-post > p{
+	letter-spacing: -0.02em;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 1.3;
+    color: #666665 !important;
+}
+
+div.conteudo-lista-post > p > a{
+	color: #16a085;
+    text-decoration: underline;
+    -webkit-transition: .25s;
+    transition: .25s;
+}
