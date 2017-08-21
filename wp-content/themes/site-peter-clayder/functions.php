@@ -18,14 +18,25 @@
 	
 	add_action('wp_enqueue_scripts' , 'my_wp_scripts');
 	
+
+	function base_url($url = '')
+	{
+	
+		return get_template_directory_uri().'/'.$url;
+	}
+
 	/**
 	 * Retorna uma quantidade de post especifica
 	 *
 	 * @param int $qtd
 	 * @return OBJECT
 	 */
-	function getPostLimitado($qtd){
-		$args = array('post_type'=>'post', 'showposts'=>$qtd, 'order'=>'DESC');
+	function getPostLimitado($qtd = 0, $tipo = "post"){
+		$args['post_type'] = $tipo; 
+		$args['order'] = 'DESC'; 
+		if($qtd > 0){
+			$args['showposts'] = $qtd;
+		}
 		return get_posts($args);
 	}
 
@@ -58,21 +69,28 @@
 		$home = '#wrapper';
 		$sobre = '#sobre';
 		$habilidade = '#habilidade';
-		$projeto = get_page_link_by_title("Projetos");
-		$contato = '#contato';
-		$blog = get_page_link_by_title("Blog");
+		$projeto = '';
+		$blog = '';
+		if(getPostLimitado(0, "projetos")){
+			$projeto = site_url("projetos");
+		}
+		if(getPostLimitado()){
+			$blog = get_page_link_by_title("Blog");
+		}
 		if(!is_page('home')){
 			$home = get_home_url();
 			$sobre = get_home_url()."#sobre";
 			$habilidade = get_home_url()."#habilidade";
-			$contato = get_home_url()."#contato";
 		}
 		imprimeLiLink($home, "fa-home", "Peter Clayder", true);
 		imprimeLiLink($sobre, "fa-info", "Sobre");
 		imprimeLiLink($habilidade, "fa-thumbs-up", "Habilidades");
-		imprimeLiLink($projeto, "fa-cubes", "Projetos");
-		imprimeLiLink($blog, "fa-book", "Blog");
-		imprimeLiLink($contato, "fa-envelope-o", "Contato");
+		if($projeto != ''){
+			imprimeLiLink($projeto, "fa-cubes", "Projetos");
+		}
+		if($blog != ''){
+			imprimeLiLink($blog, "fa-book", "Blog");
+		}
 	}
 
 	function get_page_link_by_title($title){
@@ -125,3 +143,17 @@
 		register_post_type('projetos',$args);
 	}
 	add_action('init','bootstrap_son_post_type_projetos');
+
+	function bootstrap_son_taxonomias(){
+        $args = array(
+             'hierarchical' => true,
+              'show_admin_column' => true,
+              'query_var'=> true,
+              'has_archive' => true,
+              'rewrite'=> array("slug"=>"categorias")
+
+         );
+    
+        register_taxonomy('categorias-projetos', 'projetos', $args);
+	}
+	add_action('init','bootstrap_son_taxonomias');

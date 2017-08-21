@@ -5,6 +5,12 @@
         <div class="row">
             <div class="col-lg-12 conteudo-lista-post">
                 <a href="<?= get_the_permalink(); ?>"><h2><?= get_the_title(); ?></h2></a>
+                <?php $id = get_the_id(); ?>
+                <?php $termos = wp_get_post_terms($id,'categorias-projetos'); ?>
+                <?php foreach ($termos as $termo): ?>
+                    <?php $link = get_term_link($termo); ?>
+                    <?php echo "<a href='$link'>".$termo->name."</a> || "; ?>
+                <?php endforeach; ?>
                 <p class="text-right">
                     <span style="color: #01579b"> <?php the_time('j \d\e F \d\e Y') ?> </span>
                 </p>

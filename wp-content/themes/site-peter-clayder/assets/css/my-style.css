@@ -84,7 +84,8 @@ p.tema-site > #texto-topo{
 a.redes-sociais{
 	margin-left: 15px;
     margin-right: 10px;
-    margin-bottom: 25px;
+	margin-bottom: 25px;
+	cursor: pointer;
 }
 
 a.redes-sociais > i:hover{
