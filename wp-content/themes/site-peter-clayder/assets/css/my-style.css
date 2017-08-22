@@ -41,7 +41,7 @@ body.paginas{
 }
 
 body.home{
-	background-color: #1e73be;
+	background: #64aac4 url("../img/layout/bg-sobre.jpg") repeat right top;
 }
 
 div.topo{
@@ -181,7 +181,7 @@ div.relevo-conteudo{
 }
 
 div.relevo-conteudo-projetos{
-	background-color: #333;
+	background-color: #FFF;
 	margin-top: 20px;
 	margin-bottom: 20px;
 	-webkit-box-shadow: 10px 10px 33px -2px rgba(0,0,0,0.75);
@@ -222,7 +222,7 @@ img.img-projeto{
 }
 
 h4.titulo-projeto{
-	color: #48d09b;
+	color: #1e73be;
 	text-align: center;
 	font-weight: bold;
 }
@@ -230,7 +230,8 @@ h4.titulo-projeto{
 p.resumo-projeto{
 	text-indent:2em;
 	padding: 10px;
-	font-size: 20px;
+	font-size: 15px;
+	color: #333 !important;
 }
 
 div.conteudo-lista-post > a > h2{
@@ -254,8 +255,18 @@ div.conteudo-lista-post > p > a{
     transition: .25s;
 }
 
+a.more-link{
+	color: #16a085;
+	text-decoration: underline;
+}
+
+a.more-link:hover{
+	color: #16a085;
+	text-decoration: underline;
+}
+
 a.saiba-mais{
-	color: #4CAF50;
+	color: #B4EEB5;
 	font-size: 25px;
 	float: right;
 	position: relative;
@@ -279,7 +290,7 @@ div.footerPagina{
 
 div.footerPrincipal{
 	color: #FFF;
-	background-color: #337ab7;
+	background-color: #64aac4;
 }
 
 .font14 {
