@@ -19,5 +19,5 @@
 			<span class="hamb-bottom icon-button-menu"></span>
 		</button>
         <div class="container">
-            <div class="row" style="margin-top: 100px;">
+            <div class="row" style="margin-top: 100px; min-height: 500px;">
                 <div class="col-lg-12">

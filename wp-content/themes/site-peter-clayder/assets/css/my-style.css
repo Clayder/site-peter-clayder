@@ -282,3 +282,7 @@ div.footerPrincipal{
     font-family: 'Archivo Narrow', sans-serif;
     font-size: 14px;
 }
+
+hr.separar-lista{
+	border-top-color: #cccccc;
+}

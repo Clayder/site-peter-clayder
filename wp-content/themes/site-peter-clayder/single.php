@@ -10,10 +10,8 @@
                     <span style="color: #01579b"> <?php the_time('j \d\e F \d\e Y') ?> </span>
                 </p>
                 <?php the_content(); ?>
-                
             </div>
         </div>
-        <hr>
     <?php endwhile; ?>
 <?php endif; ?>
 <div class="row paginacao" >
