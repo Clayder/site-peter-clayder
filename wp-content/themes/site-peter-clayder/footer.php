@@ -29,7 +29,7 @@
 			<script>
 				var div = document.getElementById('texto-topo');
 
-				var texto = 'Carioca . * Desenvolvedor Web . * Apaixonado por * tecnologias . * Viciado em * filmes e séries .';
+				var texto = 'Carioca . * Desenvolvedor Web . * Apaixonado por * tecnologias . * Viciado em * café * filmes * e séries .';
 
 				function escrever(frase, el) {
 						var char = frase.split('').reverse();
