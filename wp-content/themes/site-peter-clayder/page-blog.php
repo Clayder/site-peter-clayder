@@ -20,7 +20,7 @@ Template Name: Blog
             
         </div>
     </div>
-    <hr>
+    <hr class="separar-lista">
 <?php endforeach; ?>
 <div class="row paginacao" >
     <!-- Pager -->

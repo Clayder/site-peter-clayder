@@ -13,7 +13,7 @@
             <?php the_content('Leia mais'); ?>
         </div>
     </div>
-    <hr>
+    <hr class="separar-lista">
 <?php endwhile; ?>
 <?php endif; ?>
 
