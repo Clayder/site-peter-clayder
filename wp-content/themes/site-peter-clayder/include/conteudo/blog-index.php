@@ -1,6 +1,6 @@
 <?php $objPosts = getPostLimitado(3); ?>
 <?php if (count($objPosts) > 0): ?>
-	<h2 class="page-header">  Blog </h2>
+	<h2 class="page-header">  Blog <a class="saiba-mais" href="<?= get_page_link_by_title("Blog"); ?>"> + notícias </a></h2>
 	<div class="row" style="margin-top: 40px;">	
 		<?php foreach ($objPosts as $post): ?>
 			<?php setup_postdata($post); ?>
