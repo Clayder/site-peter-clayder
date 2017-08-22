@@ -22,5 +22,5 @@
   -->
 </head>
 
-<?php echo (is_page('home'))? "<body class='home'>" : "<body class='paginas'>";
+<?php echo (is_page('home') || (is_front_page() && is_home()))? "<body class='home'>" : "<body class='paginas'>";
 
