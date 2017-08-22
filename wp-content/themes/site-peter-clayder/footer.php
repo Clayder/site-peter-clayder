@@ -5,7 +5,7 @@
 	    <script src="http://localhost/www/peter-dev/site-estatico/js/index.js"></script>
 		-->
 		<?php wp_footer(); ?>
-		<?php if(is_page('home')): ?>
+		<?php if(is_page('home') || (is_front_page() && is_home())): ?>
 			<script>
 				function blink(selector) {
 					$(selector).fadeOut('slow', function() {
@@ -74,6 +74,14 @@
 							$("#"+this.id).removeClass('animated pulse');
 						}
 					);
+					$("a.saiba-mais").hover(
+						function(e){
+							$("a.saiba-mais").addClass('animated rubberBand');
+						},
+						function(){
+							$("a.saiba-mais").removeClass('animated rubberBand');
+						}
+					);
 				});
 			</script>
 			<script>
@@ -82,3 +90,5 @@
 		<?php endif; ?>
 	</body>
 </html>
+
+

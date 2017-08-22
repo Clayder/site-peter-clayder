@@ -249,3 +249,12 @@ div.conteudo-lista-post > p > a{
     -webkit-transition: .25s;
     transition: .25s;
 }
+
+a.saiba-mais{
+	color: #4CAF50;
+	font-size: 25px;
+	float: right;
+	position: relative;
+	top: 25px;
+	cursor:pointer;
+}

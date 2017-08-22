@@ -1,6 +1,6 @@
 <?php $objPosts = getPostLimitado(3, 'projetos'); ?>
 	<?php if (count($objPosts) > 0): ?>
-	<h2 class="page-header">  Projetos </h2>
+	<h2 class="page-header">  Projetos <a class="saiba-mais" href="<?= site_url("projetos"); ?>"> + projetos </a> </h2>
 	<div class="row">
 		<div class="col-lg-12">
 			<div class="relevo-conteudo" id="texto-projetos">
