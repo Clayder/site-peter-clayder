@@ -1,11 +1,20 @@
-		<!-- /#wrapper 
-	  	<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-		<script src='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js'></script>
-
-	    <script src="http://localhost/www/peter-dev/site-estatico/js/index.js"></script>
-		-->
-		<?php wp_footer(); ?>
+		
+		<?php $classFooterPag = "footerPagina"; ?>
+		<?php $isPrincipal = false; ?>
 		<?php if(is_page('home') || (is_front_page() && is_home())): ?>
+			<?php $classFooterPag = "footerPrincipal"; ?>
+			<?php $isPrincipal = false; ?>
+		<?php endif; ?>
+		<div class="footer <?= $classFooterPag; ?>">
+			<div class="container" >
+				<div class="row">
+					<div class="col-md-8"><span class="font14">© 2017 - 2017 Site Peter Clayder - Todos os direitos reservados.</span></div>
+					<div class="col-md-4"><span class="font14">Mantido à base de <i class="fa fa-coffee margin-left" aria-hidden="true"></i></span></div>			
+				</div>
+			</div>
+		</div>
+		<?php wp_footer(); ?>
+		<?php if($isPrincipal): ?>
 			<script>
 				function blink(selector) {
 					$(selector).fadeOut('slow', function() {

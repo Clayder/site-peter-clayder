@@ -258,3 +258,27 @@ a.saiba-mais{
 	top: 25px;
 	cursor:pointer;
 }
+
+div.footer{ 
+	padding: 20px;
+	width: 100% ;
+	min-height: 50px;
+	-webkit-box-shadow: 0px -9px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px -9px 5px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px -9px 5px 0px rgba(0,0,0,0.75);
+}
+
+div.footerPagina{
+	background-color: #FFF;
+	color: #333333;
+}
+
+div.footerPrincipal{
+	color: #FFF;
+	background-color: #337ab7;
+}
+
+.font14 {
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 14px;
+}
