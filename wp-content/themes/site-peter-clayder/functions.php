@@ -157,3 +157,8 @@
         register_taxonomy('categorias-projetos', 'projetos', $args);
 	}
 	add_action('init','bootstrap_son_taxonomias');
+
+	function imprimeResumo($resumo){
+		return wp_trim_words( get_the_excerpt(), 25);
+	}
+	

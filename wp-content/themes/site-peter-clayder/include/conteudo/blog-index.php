@@ -10,8 +10,9 @@
 					<h4 class="titulo-projeto"><?= get_the_title(); ?></h4>
 				</a>
 				<p class="resumo-projeto">
-					<?= get_the_content( "Continue lendo"); ?>
+					<?= imprimeResumo(get_the_excerpt()); ?>
 				</p>
+				<a class="more-link" href="<?= get_the_permalink(); ?>">Saiba mais</a>
 			</div>
 		<?php endforeach; ?>
 	</div>
