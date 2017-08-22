@@ -3,7 +3,7 @@
 		<?php $isPrincipal = false; ?>
 		<?php if(is_page('home') || (is_front_page() && is_home())): ?>
 			<?php $classFooterPag = "footerPrincipal"; ?>
-			<?php $isPrincipal = false; ?>
+			<?php $isPrincipal = true; ?>
 		<?php endif; ?>
 		<div class="footer <?= $classFooterPag; ?>">
 			<div class="container" >
