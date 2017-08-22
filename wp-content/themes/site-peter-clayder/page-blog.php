@@ -4,6 +4,7 @@ Template Name: Blog
 */ 
 ?>
 <?php $nomePagina = "blog"; ?>
+<?php $url = get_home_url(); ?>
 <?php include(locate_template('include/paginas/topo-paginas.php')); ?>
 <?php $args = array('post_type'=>'post', 'order'=>'DESC'); ?>
 <?php $objPosts = get_posts($args); ?>

@@ -1,4 +1,5 @@
 <?php $nomePagina = "blog"; ?>
+<?php $url = get_page_link_by_title("Blog"); ?>
 <?php include(locate_template('include/paginas/topo-paginas.php')); ?>
 <?php if(have_posts()):?>
     <?php while(have_posts()): the_post(); ?>
@@ -8,7 +9,7 @@
                 <p class="text-right">
                     <span style="color: #01579b"> <?php the_time('j \d\e F \d\e Y') ?> </span>
                 </p>
-                <?php the_content('Leia mais'); ?>
+                <?php the_content(); ?>
                 
             </div>
         </div>
