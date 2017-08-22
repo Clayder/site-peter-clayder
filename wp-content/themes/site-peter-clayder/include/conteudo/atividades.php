@@ -11,6 +11,7 @@
     <div class="col-lg-5">
         <div class="skill" id="skill-php"> PHP </div>
         <div class="skill" id="skill-html"> HTML </div>
+        <div class="skill" id="skill-opencart"> Opencart </div>
         <div class="skill" id="skill-css"> CSS </div>
         <div class="skill" id="skill-js"> JavaScript </div>
         <div class="skill" id="skill-jquery"> Jquery </div>
