@@ -3,7 +3,7 @@
     <div class="overlay"></div>
 	<?php get_sidebar(); ?>
 	<header class="paginas">
-        <a href="<?= home_url(); ?>">    
+        <a href="<?= $url; ?>">    
             <h1 class="paginas">
                 <span style="color: #333333"><\</span> 
                     <?= $nomePagina; ?> 

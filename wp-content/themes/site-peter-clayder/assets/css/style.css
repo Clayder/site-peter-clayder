@@ -298,7 +298,6 @@ body blockquote {
 }
 body a {
   color: rgba(255, 255, 255, 0.8);
-  text-decoration: underline;
 }
 body a:hover {
   color: #fff;
