@@ -29,7 +29,7 @@
 			<script>
 				var div = document.getElementById('texto-topo');
 
-				var texto = 'Carioca . * Desenvolvedor Web . * Apaixonado por * tecnologias . * Viciado em * café * filmes * e séries .';
+				var texto = 'Carioca * Desenvolvedor Web  * transformando * ideias em realidade . * Viciado em * código * com * café .';
 
 				function escrever(frase, el) {
 						var char = frase.split('').reverse();
@@ -46,7 +46,7 @@
 								next = char.pop();
 							}
 							el.innerHTML += next;
-						}, 200);
+						}, 250);
 				}
 
 				escrever(texto, div);
@@ -94,7 +94,7 @@
 				});
 			</script>
 			<script>
-				$('#animateTest').addClass('animated infinite jello');
+				$('.animateLink').addClass('animated infinite jello');
 			</script>
 		<?php endif; ?>
 	</body>

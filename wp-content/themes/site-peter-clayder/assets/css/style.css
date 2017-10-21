@@ -286,11 +286,10 @@ html {
 }
 /* SOME DEMO STYLES - NOT REQUIRED */
 
-body h1,
 body h2,
 body h3,
 body h4 {
-  color: rgba(255, 255, 255, 0.9);
+  color: #333333;
 }
 body p,
 body blockquote {

@@ -23,3 +23,10 @@
         <div class="skill" id="skill-wordpress"> Wordpress </div>
     </div>
 </div>
+<div class="row" >
+    <div class="col-md-12 animateLink">
+        <center>
+            <a  titulo="Clique aqui" href="#projeto" style="color: #FFF"> <i class="fa fa-arrow-circle-down fa-3x" aria-hidden="true"></i></a>
+        <center>
+    </div>
+</div>

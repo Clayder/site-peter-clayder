@@ -1,9 +1,45 @@
 header.home{
 	background-color: #333333;
-	background-image: url("../img/layout/header.png");
-	background-repeat: no-repeat;
-	min-height: 675px;
+	background-image: url("../img/layout/rio-de-janeiro-1963744_960_720.jpg");
+	/*com isso o header ficará sempre com o tamanho da tela */
+  	height: 100vh;
+  	/*deixa o background com efeito paralax*/
+  	background-attachment: fixed;
+  	/* cover é para nunca deixar espaço sem imagem*/
+  	background-size: cover;
 }
+
+div.bloco-info{
+	min-height: 110vh;
+}
+div.bloco-info-esp{
+	min-height: 110vh;
+	
+}
+#sobre{
+	background: -webkit-radial-gradient(center, ellipse cover, #85bbd0 0%, #0091c6 100%);
+    background: -o-radial-gradient(center, ellipse cover, #85bbd0 0%, #0091c6 100%);
+    background: -ms-radial-gradient(center, ellipse cover, #85bbd0 0%, #0091c6 100%);
+    background: radial-gradient(ellipse at center, #85bbd0 0%, #0091c6 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#85bbd0', endColorstr='#0091c6',GradientType=1 );
+}
+
+#servico{
+    background: -webkit-radial-gradient(center, ellipse cover, rgb(240, 226, 124) 0%, rgba(248, 217, 49, 0.71) 100%);
+}
+
+#habilidade{
+	background: radial-gradient(ellipse at center, rgba(0, 152, 97, 0.66) 0%, rgba(9, 122, 86, 0.62) 100%);
+}
+
+#projeto{
+	background: radial-gradient(ellipse at center, rgba(231, 76, 60, 0.79) 0%, rgba(231, 76, 60, 0.67) 100%);
+}
+
+#blog{
+	background: radial-gradient(ellipse at center, rgba(52, 73, 94, 0.36) 0%, rgba(52, 73, 94, 0.68) 100%);
+}
+
 
 span.icon-button-menu{
 	background-color: #48d09b !important;
@@ -41,7 +77,7 @@ body.paginas{
 }
 
 body.home{
-	background: #64aac4 url("../img/layout/bg-sobre.jpg") repeat right top;
+	/*background: #64aac4 url("../img/layout/bg-sobre.jpg") repeat right top;*/
 }
 
 div.topo{
@@ -50,12 +86,14 @@ div.topo{
 }
 
 p.tema-site{
-	font-size: 25px;
+	font-size: 40px;
 	color: #FFF;
-	margin-bottom: 25px;
+	margin-bottom: 35px;
+	text-align: center;
 }
 
-p.tema-site > span.nome-topo{
+h1.nome-topo{
+	color: #FFF;
 	text-align: center;
 	font-size: -webkit-xxx-large;
 	font-weight: bold;
@@ -64,9 +102,12 @@ p.tema-site > span.nome-topo{
 }
 
 p.tema-site > #texto-topo{
-	color: #48d09b;
+	color: #333333;
 	text-align: center;
 	font-weight: bold;
+	min-width: 100px;
+	font-family: 'Dancing Script', cursive;
+	text-shadow: 0 1px 3px #FFF;
 }
 
 .content {
@@ -213,6 +254,10 @@ div.projetos > a:hover{
 	text-decoration: underline;
 }
 
+div.projetos > img{
+	margin: 0 auto;
+}
+
 div.projetos > a{
 	text-decoration: none;
 }
@@ -289,8 +334,8 @@ div.footerPagina{
 }
 
 div.footerPrincipal{
-	color: #FFF;
-	background-color: #64aac4;
+	color: #333333;
+	background-color: #FFF;
 }
 
 .font14 {
@@ -300,4 +345,41 @@ div.footerPrincipal{
 
 hr.separar-lista{
 	border-top-color: #cccccc;
+}
+
+.about-item {
+    margin-bottom: 45px;
+}
+
+.about-item .icon-container.orange {
+	background: #f89053;
+	color: #FFF;
+}
+
+.about-item .icon-container.blue {
+	background: #2c4150;
+	color: #FFF;
+}
+
+.about-item .icon-container {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    border-radius: 75%;
+}
+
+.servico-desc{
+	color: #5b728a;
+}
+
+.about-us-container {
+    padding: 30px 0 45px;
+    color: #333;
+    text-align: center;
+}
+
+.about-item .icon-container i {
+    font-size: 42px;
+    top: 28px;
+    position: relative;
 }

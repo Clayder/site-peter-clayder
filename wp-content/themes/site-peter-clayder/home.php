@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<div id="wrapper" style="margin-bottom: 80px">
+<div id="wrapper">
     <div class="overlay"></div>
 	<?php get_sidebar(); ?>
 	<?php get_header("topo"); ?>
@@ -9,32 +9,44 @@
 			<span class="hamb-top"></span>
 			<span class="hamb-middle"></span>
 			<span class="hamb-bottom"></span>
-		</button>
-        <div class="container">
-            <div class="row" id="sobre">
-                <div class="col-lg-12">
-                    <?php get_template_part('include/conteudo/apresentacao'); ?>
+        </button>
+        <div class="bloco-info" id="sobre">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <?php get_template_part('include/conteudo/apresentacao'); ?>
+                    </div>
                 </div>
-            </div>
-            <div class="row" id="habilidade">
-                <div class="col-lg-12">
-                    <?php get_template_part('include/conteudo/atividades'); ?>
-                </div>
-            </div>
-            <div class="row" id="projeto">
-                <div class="col-lg-12">
-                    <?php get_template_part('include/conteudo/projetos'); ?>
-                </div>
-            </div>
-			<div class="row" id="blog">
-                <div class="col-lg-12">
-                    <?php get_template_part('include/conteudo/blog-index'); ?>
-                </div>
-            </div>
-            <div class="row">
-              
             </div>
         </div>
+        <div class="bloco-info" id="servico">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <?php get_template_part('include/conteudo/servico'); ?>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bloco-info" id="habilidade">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <?php get_template_part('include/conteudo/atividades'); ?>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bloco-info-esp" id="projeto">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <?php get_template_part('include/conteudo/projetos'); ?>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <?php get_template_part('include/conteudo/blog-index'); ?>
     </div>
     <!-- /#page-content-wrapper -->
 </div>
