@@ -16,10 +16,10 @@
 			<div class="row">
 				<div class="col-md-12">
 					<center>	
-						<a href="https://t.me/peterclayder" target=“_blank” class="redes-sociais"><i class="fa fa-telegram fa-3x" aria-hidden="true"></i></a>
-						<a href="https://twitter.com/peterclayder" target=“_blank” class="redes-sociais"><i class="fa fa-twitter fa-3x" aria-hidden="true"></i></a>
-						<a href="https://www.linkedin.com/in/peter-clayder/" target=“_blank” class="redes-sociais"><i class="fa fa-linkedin fa-3x" aria-hidden="true"></i></a>
+						<a href="https://t.me/peterclayder" title="Telegram" target=“_blank” class="redes-sociais"><i class="fa fa-telegram fa-3x" aria-hidden="true"></i></a>
+						<a href="https://github.com/Clayder" title="GitHub" target=“_blank” class="redes-sociais"><i class="fa fa-github fa-3x" aria-hidden="true"></i></a>
 						<a href="mailto:peterclayder@gmail.com" target="_blank" class="redes-sociais"><i class="fa fa-envelope fa-3x" aria-hidden="true"></i></a>
+                        <a href="https://www.linkedin.com/in/peter-clayder/" title="Linkedin" target=“_blank” class="redes-sociais"><i class="fa fa-linkedin fa-3x" aria-hidden="true"></i></a>
 					</center>
 				</div>
 			</div>
